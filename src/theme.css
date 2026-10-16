@@ -1,0 +1,1853 @@
+/* Cartridge-inspired palette and pixel typography across all application screens. */
+:root {
+  color-scheme: dark;
+  --pixel-display: "Press Start 2P", monospace;
+  --pixel-body: "Pixelify Sans", monospace;
+  color: #f4f1ff;
+  background: #101426;
+}
+#root {
+  isolation: isolate;
+}
+.pixel-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #101426;
+  background-image:
+    linear-gradient(#6674ad0b 1px, transparent 1px),
+    linear-gradient(90deg, #6674ad0b 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.pixel-starfield {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+}
+.pixel-starfield:before,
+.pixel-starfield:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #bfc9ff;
+  left: 12%;
+  top: 17%;
+  box-shadow:
+    120px 130px #bfc9ff,
+    360px 70px #ffd166,
+    720px 200px #bfc9ff,
+    1040px 20px #ffd166,
+    920px 520px #bfc9ff,
+    180px 530px #ffd166,
+    420px 660px #bfc9ff;
+}
+.pixel-starfield:after {
+  left: 23%;
+  top: 33%;
+  transform: rotate(180deg);
+  opacity: 0.5;
+}
+.background-pokemon {
+  position: absolute;
+  height: auto;
+  opacity: 0.17;
+  image-rendering: pixelated;
+  object-fit: contain;
+  user-select: none;
+  filter: saturate(0.8);
+  animation: companion-drift 14s steps(12, end) infinite alternate;
+  animation-delay: var(--drift-delay);
+}
+.background-wordmark {
+  position: absolute;
+  left: 13%;
+  top: 58%;
+  color: #b5a4f5;
+  opacity: 0.035;
+  font-family: var(--pixel-display);
+  font-size: clamp(32px, 7vw, 104px);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+@keyframes companion-drift {
+  from {
+    transform: translate3d(-8px, 8px, 0);
+  }
+  to {
+    transform: translate3d(12px, -16px, 0);
+  }
+}
+button,
+a,
+input,
+select,
+textarea {
+  transition:
+    background 0.16s,
+    border-color 0.16s,
+    transform 0.16s,
+    box-shadow 0.16s;
+}
+button:active:not(:disabled),
+.primary:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+.site-header {
+  background: #111629f5;
+  border-bottom-color: #cf3e58;
+  box-shadow: 0 4px 0 #090c19;
+}
+.brand {
+  font-family: var(--pixel-display);
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.brand > span:last-child > span {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.pokeball {
+  background: linear-gradient(#ed5a70 0 43%, #13182c 43% 55%, #fff4df 55%);
+}
+.pokeball:after {
+  background: #fff4df;
+  border-color: #13182c;
+}
+.site-header nav button {
+  font-size: 16px;
+}
+.site-header nav .nav-active:after {
+  background: #ffd166;
+}
+.header-portal {
+  font-size: 14px;
+  background: #262c48;
+}
+.season,
+.eyebrow {
+  color: #b4a6df;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 1.3px;
+}
+h1,
+h2,
+.scene-caption strong,
+.bottom-banner h3 {
+  font-family: var(--pixel-display);
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+h1,
+.page-title h1 {
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.65;
+}
+h1 em {
+  color: #ffd166;
+  font-style: normal;
+  text-shadow: 3px 3px #593d67;
+}
+.hero-intro {
+  grid-template-columns: 43% 57%;
+  padding-top: 58px;
+  padding-bottom: 50px;
+}
+.hero-intro h1 {
+  font-size: clamp(25px, 2.6vw, 37px);
+  line-height: 1.75;
+  letter-spacing: -1px;
+  margin: 23px 0;
+  text-shadow: 3px 3px #363355;
+}
+.hero-intro h1 em {
+  display: inline-block;
+}
+h2,
+.section-heading h2,
+.how-card h2,
+.panel h2 {
+  font-size: 19px;
+  line-height: 1.7;
+}
+h3 {
+  font-family: var(--pixel-body);
+}
+p,
+.hero-intro p,
+.page-title p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #b5bfd8;
+}
+.primary,
+.secondary,
+.danger,
+.text-button {
+  font-family: var(--pixel-body);
+  font-size: 15px;
+}
+.primary {
+  background: #cd3e58;
+  border: 2px solid #ff8293;
+  box-shadow: 4px 4px 0 #090c1b;
+  color: #fff7ee;
+}
+.primary:hover {
+  background: #e6536d;
+  box-shadow: 6px 6px 0 #090c1b;
+  transform: translate(-1px, -1px);
+}
+.secondary {
+  border: 2px solid #4e5b82;
+  background: #20273f;
+}
+.text-button {
+  color: #ffd166;
+}
+.small {
+  font-size: 12px;
+}
+.hero-actions {
+  gap: 17px;
+  flex-wrap: wrap;
+}
+.hero-proof {
+  font-size: 13px;
+}
+.hero-proof strong {
+  color: #f4e8b5;
+}
+.hero-art {
+  border-color: #3c4162;
+  outline: 2px solid #70638a;
+  background: #252b4a;
+  box-shadow: 8px 8px 0 #090c1b;
+  height: 390px;
+}
+.scene-label {
+  color: #e7e7fb;
+  background: #171b32e8;
+  border-color: #9c88be;
+  font-size: 11px;
+}
+.scene-label span:last-child {
+  color: #c5b6df;
+  border-color: #70638a;
+}
+.status-dot {
+  background: #ffd166;
+  box-shadow: 0 0 0 3px #ffd16615;
+}
+.scene-caption {
+  top: 86px;
+  text-shadow: 2px 2px #292844;
+}
+.scene-caption span {
+  font-size: 11px;
+  color: #ddd3ec;
+}
+.scene-caption strong {
+  display: block;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff4d4;
+  max-width: 360px;
+}
+.scene-coordinate {
+  font-size: 9px;
+  color: #ead8fa;
+}
+.league-strip {
+  background: #171d3199;
+}
+.league-strip strong {
+  font-size: 15px;
+}
+.league-strip small {
+  font-size: 13px;
+}
+.league-strip svg {
+  color: #ffd166;
+}
+.partner-feature p,
+.panel p {
+  font-size: 15px;
+}
+.featured-partners span {
+  font-size: 12px;
+}
+.featured-partners button,
+.pokemon-option {
+  background: #20253cd9;
+}
+.featured-partners button:hover,
+.pokemon-option:hover {
+  background: #323453;
+}
+.featured-partners button.chosen,
+.pokemon-option.selected {
+  border-color: #ffd166;
+  background: #35304c;
+}
+.round-icon {
+  border-radius: 0;
+  color: #bfa5f0;
+  border-color: #65578b;
+}
+.how-card {
+  background: #23273ee8;
+  border: 2px solid #444668;
+  box-shadow: 5px 5px 0 #0b0f20;
+}
+.how-card:before {
+  color: #ffd166;
+}
+.how-step strong {
+  font-size: 16px;
+}
+.how-step p {
+  font-size: 14px;
+}
+.how-step > span {
+  font-family: var(--pixel-display);
+  font-size: 10px;
+  color: #f9cb6c;
+}
+.table-head {
+  font-size: 11px;
+  background: #252a45;
+}
+.table-row:not(.table-head) {
+  background: #171d30b3;
+}
+.table-row:not(.table-head):hover {
+  background: #30334e;
+}
+.team-cell strong {
+  font-size: 16px;
+}
+.team-cell small {
+  font-size: 13px;
+}
+.table-row,
+.table-score {
+  font-size: 15px;
+}
+.table-foot {
+  font-size: 14px;
+  background: #1c223acc;
+}
+.bottom-banner {
+  background: #26253ed9;
+  border: 2px solid #51476d;
+}
+.bottom-banner h3 {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.bottom-banner p {
+  font-size: 14px;
+}
+footer {
+  background: #111629a6;
+}
+.footer-brand strong {
+  font-family: var(--pixel-display);
+  font-size: 8px;
+}
+.footer-brand > span:last-child,
+footer button,
+.connection {
+  font-size: 12px;
+}
+footer > p {
+  font-size: 11px;
+}
+.panel {
+  background: #1b2138ed;
+}
+label,
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+input,
+textarea,
+select {
+  background: #12182b;
+  color: #eef0ff;
+}
+.dex,
+.pokemon-option small {
+  font-size: 12px;
+}
+.pokemon-option strong {
+  font-size: 15px;
+}
+.selection-note,
+.selection-note > span:last-child,
+.hint {
+  font-size: 14px;
+}
+.modal {
+  background: #1b2138;
+  border-color: #696087;
+}
+.modal h2 {
+  font-size: 22px;
+}
+.login-panel h1,
+.portal-heading h1,
+.admin-page > .section-heading h1,
+.result-card h1 {
+  font-size: 30px;
+}
+.result-card {
+  background: #1d233bea;
+  border-color: #51476d;
+}
+.final-score {
+  color: #ffd166;
+  font-family: var(--pixel-display);
+  font-size: 34px;
+}
+.podium-card {
+  background: #222740ed;
+}
+.podium-card.place-0 {
+  background: #383048ed;
+  border-color: #ffd166;
+}
+.podium-card > strong {
+  color: #ffd166;
+}
+kbd {
+  color: #f1e7ff;
+  background: #2a304b;
+  border-color: #6c658d;
+}
+.portal-guide {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  background: #252a44;
+  border-left: 4px solid #ffd166;
+  margin: 20px 0;
+}
+.portal-guide p {
+  margin: 6px 0 0;
+}
+.portal-guide strong {
+  font-size: 19px;
+}
+.portal-guide svg {
+  color: #ffd166;
+  flex-shrink: 0;
+}
+.mode-picker {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 0 32px;
+}
+.mode-card {
+  padding: 24px;
+  border: 2px solid #44496c;
+  background: #20253de8;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.mode-card:hover {
+  border-color: #ffd166;
+  background: #2d2d4b;
+  transform: translateY(-3px);
+}
+.mode-card strong {
+  display: block;
+  font-size: 21px;
+}
+.mode-card small {
+  display: block;
+  color: #b6bdd8;
+  font-size: 14px;
+  margin-top: 7px;
+}
+.mode-card > svg {
+  color: #ffd166;
+}
+.mode-card .mode-arrow {
+  margin-left: auto;
+}
+.admin-status-banner {
+  padding: 18px 22px;
+  border: 1px solid #625881;
+  background: #25243f;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 20px 0;
+}
+.admin-status-banner strong {
+  font-size: 20px;
+  color: #ffd166;
+}
+.admin-status-banner p {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+.admin-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #141a2eea;
+  backdrop-filter: blur(8px);
+}
+.admin-tabs button {
+  font-size: 16px !important;
+}
+.admin-tabs > button.active {
+  color: #ffd166;
+  border-bottom-color: #ffd166;
+}
+.audit-row code {
+  color: #bbc6e3;
+}
+.history-row {
+  font-size: 15px;
+}
+/* Gameplay takes over the viewport; HUD overlays never shrink the canvas. */
+body.is-playing {
+  overflow: hidden;
+}
+body.is-playing .site-header,
+body.is-playing footer {
+  display: none;
+}
+body.is-playing main {
+  max-width: none;
+  padding: 0;
+}
+body.is-playing main > .page-section {
+  padding: 0;
+  min-height: 0;
+}
+.game-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none !important;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  background: #101426;
+  color: #f4edff;
+  overflow: hidden;
+}
+.game-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+.game-canvas canvas {
+  display: block !important;
+}
+.game-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 4;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 22px;
+  background: #11152cde;
+  border-bottom: 1px solid #5f5485;
+  gap: 12px;
+}
+.game-top .eyebrow {
+  color: #ded0ef;
+  font-size: 12px;
+}
+.game-top .row {
+  gap: 8px;
+}
+.game-top button {
+  min-height: 34px;
+  color: #eee7ff;
+  background: #252d4a;
+  border: 1px solid #615c83;
+  font-size: 13px;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.game-top button:hover {
+  background: #403858;
+  border-color: #ffd166;
+}
+.hud {
+  position: absolute;
+  top: 70px;
+  left: 22px;
+  right: 22px;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  pointer-events: none;
+  padding: 13px 20px;
+  width: fit-content;
+  max-width: calc(100% - 44px);
+  border: 2px solid #807096;
+  background: #171b32e8;
+  box-shadow: 4px 4px 0 #17142977;
+}
+.hud small {
+  color: #c2b8d9;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.hud strong {
+  font-family: var(--pixel-display);
+  font-size: 17px;
+  color: #ffd166;
+  display: block;
+  margin-top: 8px;
+}
+.hud .hearts {
+  align-self: center;
+}
+.hud .hearts small {
+  margin-bottom: 8px;
+}
+.hud .hearts > div {
+  display: flex;
+  gap: 4px;
+}
+.hud .hearts span {
+  font-size: 13px;
+  color: #cbc4dc;
+}
+.game-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 42px;
+  padding: 8px 22px;
+  background: #11152cde;
+  color: #ddd2ec;
+  font-size: 14px;
+  border-top: 1px solid #5f5485;
+}
+.game-bottom > span:first-child {
+  font-size: 14px;
+}
+.game-bottom kbd {
+  font-size: 11px;
+}
+.game-bottom .objective {
+  color: #ffd166;
+}
+.game-top .partner-mini {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+.game-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  background: #12152be8;
+  color: #f5eaff;
+  padding: 24px;
+  backdrop-filter: blur(3px);
+}
+.game-loading h2 {
+  font-size: 25px;
+  color: #ffd166;
+  margin: 0;
+}
+.game-loading p {
+  max-width: 540px;
+  margin: 0;
+}
+.game-loading .primary {
+  padding: 14px 26px;
+  font-size: 18px;
+}
+.game-loading .control-guide {
+  background: #262a43;
+  border: 1px solid #5f587b;
+  text-align: left;
+  margin: 8px 0;
+  max-width: 550px;
+  font-size: 17px;
+  gap: 14px;
+}
+.game-loading .control-guide kbd {
+  font-size: 14px;
+}
+.game-loading .partner-preview {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+.game-countdown {
+  font-family: var(--pixel-display);
+  font-size: 64px;
+  color: #ffd166;
+  text-shadow: 5px 5px #753956;
+}
+.touch-controls {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  bottom: 58px;
+  left: 20px;
+  right: 20px;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.touch-controls > div {
+  display: flex;
+  gap: 12px;
+}
+.touch-controls button {
+  pointer-events: auto;
+  touch-action: none;
+  width: 64px;
+  height: 60px;
+  background: #1b2138d9;
+  border: 2px solid #9886b2;
+  color: #fff0e4;
+  font-size: 22px;
+  user-select: none;
+}
+.touch-controls > button {
+  width: 92px;
+  font-family: var(--pixel-display);
+  font-size: 11px;
+}
+.game-message {
+  position: absolute;
+  top: 170px;
+  right: 24px;
+  z-index: 3;
+  padding: 10px 15px;
+  background: #1a1e37db;
+  border-left: 3px solid #ffd166;
+  color: #f8e3a6;
+  max-width: 300px;
+  font-size: 16px;
+  pointer-events: none;
+}
+.game-finish-confirm {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  background: #11152cd9;
+  display: grid;
+  place-items: center;
+}
+.game-finish-confirm > div {
+  background: #21253f;
+  border: 2px solid #8a759f;
+  padding: 32px;
+  max-width: 480px;
+  margin: 20px;
+  text-align: center;
+}
+.game-finish-confirm h2 {
+  font-size: 20px;
+}
+.game-finish-confirm .row {
+  justify-content: center;
+}
+@media (max-width: 1100px) {
+  .hero-intro {
+    grid-template-columns: 45% 55%;
+  }
+  .hero-intro h1 {
+    font-size: 27px;
+  }
+  .hero-art {
+    height: 360px;
+  }
+  .scene-caption strong {
+    font-size: 14px;
+    max-width: 270px;
+  }
+  .league-strip strong {
+    font-size: 13px;
+  }
+  .league-strip small {
+    font-size: 12px;
+  }
+  .hero-intro .eyebrow {
+    font-size: 10px;
+  }
+  .game-top .eyebrow {
+    font-size: 10px;
+  }
+}
+@media (max-width: 760px) {
+  .background-pokemon {
+    max-width: 135px;
+    opacity: 0.16;
+  }
+  .background-pokemon:nth-of-type(2n) {
+    left: 69% !important;
+  }
+  .background-wordmark {
+    left: -20%;
+    top: 48%;
+    font-size: 39px;
+  }
+  .site-header nav button {
+    font-size: 15px;
+  }
+  .brand {
+    font-size: 7px;
+  }
+  .brand > span:last-child > span {
+    font-size: 9px;
+  }
+  .header-portal {
+    font-size: 12px;
+  }
+  .hero-intro {
+    padding-top: 30px;
+  }
+  .hero-intro h1 {
+    font-size: clamp(22px, 6.2vw, 30px);
+    line-height: 1.8;
+  }
+  .hero-intro p {
+    font-size: 17px;
+  }
+  .hero-actions {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .hero-actions .text-button {
+    font-size: 14px;
+  }
+  .hero-art {
+    height: 305px;
+  }
+  .scene-label {
+    font-size: 9px;
+    left: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+  .scene-caption {
+    left: 17px;
+  }
+  .scene-caption strong {
+    font-size: 13px;
+    max-width: 240px;
+  }
+  .scene-coordinate {
+    font-size: 7px;
+  }
+  h1,
+  .page-title h1 {
+    font-size: 24px;
+    line-height: 1.7;
+  }
+  h2,
+  .section-heading h2,
+  .how-card h2 {
+    font-size: 16px;
+  }
+  .section-heading {
+    flex-wrap: wrap;
+  }
+  .featured-partners span {
+    font-size: 10px;
+  }
+  .team-cell strong {
+    font-size: 13px;
+  }
+  .team-cell small {
+    font-size: 11px;
+  }
+  .table-head {
+    font-size: 9px;
+  }
+  .table-score {
+    font-size: 13px;
+  }
+  .bottom-banner h3 {
+    font-size: 14px;
+  }
+  .footer-brand strong {
+    font-size: 7px;
+  }
+  .modal h2 {
+    font-size: 19px;
+  }
+  .portal-heading h1,
+  .admin-page > .section-heading h1 {
+    font-size: 22px;
+  }
+  .login-panel h1,
+  .result-card h1 {
+    font-size: 27px;
+  }
+  .selection-note > span:last-child {
+    font-size: 12px;
+  }
+  .mode-picker {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .mode-card {
+    padding: 18px;
+  }
+  .hud {
+    left: 10px;
+    top: 67px;
+    max-width: calc(100% - 20px);
+    gap: 15px;
+    padding: 12px;
+  }
+  .hud strong {
+    font-size: 12px;
+  }
+  .hud small {
+    font-size: 8px;
+  }
+  .hud .hearts {
+    gap: 2px;
+  }
+  .game-top {
+    padding: 7px 10px;
+  }
+  .game-top .eyebrow {
+    font-size: 9px;
+    max-width: 180px;
+  }
+  .game-top .button-label {
+    display: none;
+  }
+  .game-top button {
+    padding: 6px;
+  }
+  .game-bottom {
+    font-size: 11px;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .game-bottom .keyboard-hint {
+    display: none;
+  }
+  .game-bottom > span:first-child {
+    font-size: 11px;
+  }
+  .game-message {
+    top: 150px;
+    right: 10px;
+    font-size: 13px;
+    max-width: 220px;
+  }
+  .game-loading h2 {
+    font-size: 20px;
+  }
+  .game-loading .control-guide {
+    font-size: 15px;
+  }
+  .game-loading .partner-preview {
+    width: 95px;
+    height: 95px;
+  }
+  .game-shell {
+    margin: 0;
+  }
+  .touch-controls {
+    display: flex;
+  }
+}
+@media (pointer: coarse) {
+  .touch-controls {
+    display: flex;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .background-pokemon {
+    animation: none;
+  }
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    transition: none;
+  }
+}
+.game-loading {
+  overflow-y: auto;
+  justify-content: safe center;
+}
+.game-loading > * {
+  flex-shrink: 0;
+}
+.game-message {
+  top: 70px;
+}
+footer a {
+  font-size: 12px;
+  color: #c5b5e8;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffd166;
+  text-decoration: underline;
+}
+@media (max-width: 760px) {
+  .game-message {
+    top: 150px;
+  }
+  .site-header nav {
+    gap: 10px;
+  }
+  .site-header nav button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .hud {
+    gap: 10px;
+    padding: 10px 8px;
+  }
+  .hud strong {
+    font-size: 10px;
+  }
+  .hud .hearts svg {
+    width: 14px;
+  }
+  .hud small {
+    font-size: 7px;
+  }
+  .game-top .eyebrow {
+    max-width: 140px;
+    font-size: 8px;
+  }
+}
+@media (max-height: 650px) {
+  .game-loading {
+    gap: 8px;
+    padding: 15px;
+  }
+  .game-loading .partner-preview {
+    display: none;
+  }
+  .game-loading .control-guide {
+    padding: 12px;
+    gap: 6px;
+    font-size: 14px;
+    margin: 0;
+  }
+  .game-loading h2 {
+    font-size: 18px;
+  }
+  .game-loading p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .game-loading .primary {
+    padding: 9px 22px;
+  }
+  .hud {
+    top: 60px;
+    padding: 8px 12px;
+    gap: 18px;
+  }
+  .hud strong {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .game-message {
+    top: 136px;
+    font-size: 12px;
+    max-width: 245px;
+    padding: 7px 10px;
+  }
+  .game-bottom {
+    min-height: 30px;
+    padding-block: 5px;
+  }
+  .touch-controls {
+    bottom: 42px;
+  }
+  .touch-controls button {
+    height: 48px;
+    width: 58px;
+  }
+  .touch-controls > button {
+    width: 85px;
+  }
+}
+.registration-feedback:empty {
+  display: none;
+}
+.registration-feedback {
+  margin-top: 20px;
+  scroll-margin-block: 24px;
+  outline: none;
+}
+.registration-feedback .error {
+  margin: 0;
+  padding: 18px 22px;
+  border: 2px solid #ff8293;
+  background: #3a253b;
+  color: #ffe7ed;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.registration-feedback strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.registration-success:focus {
+  outline: 2px solid #ffd166;
+  outline-offset: 5px;
+}
+.difficulty-meter {
+  position: absolute;
+  z-index: 3;
+  top: 151px;
+  left: 22px;
+  width: 245px;
+  padding: 8px 12px;
+  background: #171b32e8;
+  border: 1px solid #807096;
+  pointer-events: none;
+  font-size: 11px;
+  color: #cfc4e3;
+}
+.difficulty-meter span {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.difficulty-meter strong {
+  color: #ffd166;
+  font-weight: 500;
+}
+.difficulty-track {
+  height: 4px;
+  background: #43415b;
+  margin-top: 7px;
+}
+.difficulty-track i {
+  display: block;
+  height: 100%;
+  background: #ed6d88;
+  transition: width 0.3s linear;
+}
+@media (max-width: 760px) {
+  .difficulty-meter {
+    top: 126px;
+    left: 10px;
+    width: 180px;
+    padding: 5px 9px;
+    font-size: 9px;
+  }
+  .game-message {
+    top: 173px;
+  }
+}
+@media (max-height: 650px) {
+  .difficulty-meter {
+    top: 117px;
+    left: 22px;
+    width: 215px;
+    padding: 5px 9px;
+    font-size: 9px;
+  }
+  .game-message {
+    top: 136px;
+  }
+}
+/* Unified team dashboard: two primary panels followed by one complete scoreboard. */
+.league-dashboard {
+  padding: 38px 0 48px;
+}
+.dashboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.dashboard-heading h1 {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  letter-spacing: -0.7px;
+}
+.league-state {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  border: 1px solid #555271;
+  padding: 10px 14px;
+  background: #20263c;
+  white-space: nowrap;
+}
+.league-state i {
+  width: 6px;
+  height: 6px;
+  background: #ffd166;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(300px, 1fr);
+  gap: 22px;
+}
+.adventure-card,
+.team-launch-card {
+  border: 2px solid #565276;
+  background: #1b2135;
+  box-shadow: 5px 5px #0c1020;
+}
+.adventure-scene {
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  background: #5c587e;
+}
+.adventure-scene canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+.scene-chapter {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.scene-chapter > span {
+  background: #1a2034db;
+  border: 1px solid #9582a6;
+  padding: 8px 10px;
+  font-size: 11px;
+  width: fit-content;
+}
+.scene-chapter strong {
+  font: 14px/1.7 var(--pixel-display);
+  text-shadow: 2px 2px #3e3156;
+}
+.dashboard-partner {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  left: 43%;
+  bottom: 32px;
+  image-rendering: pixelated;
+}
+.scene-caption-bottom {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  font-size: 10px;
+  color: #f2e3ef;
+  text-shadow: 1px 1px #29243c;
+}
+.adventure-controls {
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-top: 2px solid #514965;
+}
+.selected-partner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.selected-partner > img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+.selected-partner strong {
+  font-size: 20px;
+}
+.selected-partner button {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+}
+.adventure-description {
+  border-top: 1px solid #343d5b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 22px;
+  color: #b9c1d8;
+  font-size: 13px;
+}
+.adventure-description > span:last-child {
+  color: #bda6d1;
+}
+.team-launch-card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.launch-icon {
+  width: 47px;
+  height: 47px;
+  border: 1px solid #88719a;
+  display: grid;
+  place-items: center;
+  color: #ffd166;
+  background: #34304a;
+}
+.team-launch-card h2 {
+  font-size: 23px;
+  line-height: 1.6;
+  margin: 0;
+}
+.team-launch-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.team-rules {
+  display: grid;
+  gap: 14px;
+  padding: 14px 0;
+}
+.team-rules > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  color: #b7c0d7;
+}
+.team-rules svg {
+  color: #b99ed8;
+  flex-shrink: 0;
+}
+.team-rules strong {
+  display: block;
+  color: #eee8f5;
+  font-weight: 500;
+}
+.team-launch-card button {
+  justify-content: center;
+  width: 100%;
+}
+.team-launch-card small {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #a7b4cf;
+}
+.dashboard-standings {
+  margin-top: 32px;
+  padding: 24px;
+  border: 1px solid #414860;
+  background: #171e31ed;
+}
+.standings-explanation {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #b3a7cf;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+.dashboard-standings .section-heading {
+  margin-bottom: 20px;
+}
+.dashboard-standings .table-row {
+  padding-block: 16px;
+}
+.dashboard-standings .table-head {
+  padding-block: 12px;
+}
+.background-pokemon {
+  opacity: 0.09;
+}
+.background-wordmark {
+  display: none;
+}
+.team-receipt {
+  padding: 20px;
+  border: 1px solid #736088;
+  background: #282b46;
+  margin: 22px 0;
+}
+.team-receipt > strong {
+  font-size: 22px;
+  color: #ffd166;
+}
+.touch-controls .attack-touch {
+  font-family: var(--pixel-display);
+  font-size: 9px;
+  width: 76px;
+  border-color: #f0b875;
+  background: #493744d9;
+}
+.touch-controls > div > button:last-child {
+  font-size: 11px;
+}
+.game-bottom {
+  gap: 10px;
+}
+.dashboard-heading + .dashboard-grid .primary {
+  font-size: 16px;
+}
+@media (min-width: 1400px) {
+  main {
+    max-width: 1280px !important;
+  }
+  .adventure-scene {
+    height: 365px;
+  }
+}
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-launch-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .team-launch-card .launch-icon {
+    display: none;
+  }
+  .team-launch-card h2 {
+    grid-row: 2;
+  }
+  .team-launch-card p {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+  .team-rules {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .team-launch-card small {
+    grid-column: 1/-1;
+  }
+  .dashboard-heading h1 {
+    font-size: 19px;
+  }
+  .league-state {
+    font-size: 12px;
+  }
+  .dashboard-standings {
+    padding: 18px;
+  }
+}
+@media (max-width: 560px) {
+  .league-dashboard {
+    padding-top: 25px;
+  }
+  .dashboard-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dashboard-heading h1 {
+    font-size: 19px;
+  }
+  .adventure-scene {
+    height: 280px;
+  }
+  .scene-chapter {
+    left: 14px;
+    top: 16px;
+  }
+  .scene-chapter strong {
+    font-size: 11px;
+  }
+  .scene-chapter > span {
+    font-size: 9px;
+  }
+  .dashboard-partner {
+    width: 105px;
+    height: 105px;
+    bottom: 25px;
+  }
+  .adventure-controls {
+    padding: 13px;
+    gap: 10px;
+  }
+  .adventure-controls .primary {
+    font-size: 13px !important;
+    padding: 12px;
+  }
+  .adventure-description {
+    padding: 13px;
+    gap: 10px;
+    font-size: 11px;
+  }
+  .selected-partner > img {
+    width: 35px;
+    height: 35px;
+  }
+  .selected-partner strong {
+    font-size: 17px;
+  }
+  .team-launch-card {
+    display: flex;
+    padding: 20px;
+  }
+  .team-launch-card h2 br {
+    display: none;
+  }
+  .team-launch-card h2 {
+    font-size: 19px;
+  }
+  .team-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dashboard-standings {
+    padding: 12px;
+    margin-top: 22px;
+  }
+  .standings-explanation {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .dashboard-standings h2 {
+    font-size: 15px;
+  }
+}
+.combat-hud {
+  position: absolute;
+  z-index: 4;
+  left: 22px;
+  bottom: 55px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100% - 44px);
+}
+.combat-hud button {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  padding: 8px 12px;
+  background: #161a30ed;
+  border: 1px solid #76668d;
+  color: #eae0f3;
+  min-width: 155px;
+  font-size: 13px;
+}
+.combat-hud button span {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.combat-hud small {
+  font-size: 11px;
+  color: #c2b8d5;
+}
+.combat-hud meter,
+.boss-hud meter {
+  width: 100%;
+  height: 8px;
+  accent-color: #adbcf4;
+}
+.combat-hud meter::-webkit-meter-optimum-value,
+.boss-hud meter::-webkit-meter-optimum-value {
+  background: #b9a5ef;
+}
+.combat-hud meter::-moz-meter-bar,
+.boss-hud meter::-moz-meter-bar {
+  background: #b9a5ef;
+}
+.touch-controls button.attack-touch {
+  font-size: 10px !important;
+  padding: 2px !important;
+}
+.bonus-partners {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.bonus-partners button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #28243e;
+  border: 1px solid #827294;
+  color: #f2dcab;
+  padding: 8px 18px;
+}
+.bonus-partners img {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+.bonus-partners button:disabled {
+  opacity: 0.5;
+}
+.combat-hud button:disabled {
+  opacity: 0.6;
+}
+.combo-label {
+  padding: 8px;
+  color: #ffdc97;
+  background: #171b31d9;
+  font-size: 13px;
+}
+.boss-hud {
+  position: absolute;
+  top: 66px;
+  right: 22px;
+  width: min(330px, 38vw);
+  z-index: 4;
+  background: #211a36ec;
+  padding: 10px 14px;
+  border: 1px solid #ab80a8;
+  color: #f4c4d5;
+  font-size: 12px;
+  display: grid;
+  gap: 6px;
+}
+.adventure-workshop {
+  margin: 24px 0;
+  border: 1px solid #494664;
+  background: #191e32d9;
+  padding: 18px 22px;
+}
+.adventure-workshop summary {
+  cursor: pointer;
+  font-size: 18px;
+  color: #eee4fc;
+}
+.adventure-workshop summary strong {
+  float: right;
+  color: #ffda89;
+  font-size: 15px;
+}
+.adventure-workshop > p {
+  font-size: 14px;
+  color: #bab4ce;
+  max-width: 900px;
+}
+.workshop-grid,
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.workshop-grid article,
+.achievement-grid article {
+  border: 1px solid #4b4564;
+  background: #23263d;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.workshop-grid p {
+  font-size: 13px;
+  margin: 0;
+  flex: 1;
+}
+.workshop-grid button {
+  padding: 9px;
+  border: 1px solid #8b7298;
+  background: #35304d;
+  color: #ffdfaa;
+}
+.workshop-grid button:disabled {
+  opacity: 0.45;
+}
+.workshop-options {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+.workshop-options label {
+  flex: 1;
+  font-size: 13px;
+}
+.workshop-options select {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+.achievement-grid article {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.achievement-grid .earned {
+  border-color: #d9b67a;
+  opacity: 1;
+}
+.achievement-grid small {
+  color: #dec995;
+}
+@media (max-width: 760px) {
+  .workshop-grid,
+  .achievement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .workshop-options {
+    flex-wrap: wrap;
+  }
+  .combat-hud {
+    left: 10px;
+    right: 10px;
+    bottom: 155px;
+    gap: 5px;
+    max-width: none;
+  }
+  .combat-hud button {
+    min-width: 0;
+    flex: 1;
+    font-size: 11px;
+    padding: 6px;
+  }
+  .combat-hud small {
+    font-size: 9px;
+  }
+  .combo-label {
+    font-size: 11px;
+    padding: 4px;
+  }
+  .boss-hud {
+    top: 185px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    font-size: 10px;
+  }
+  .touch-controls {
+    left: 10px;
+    right: 10px;
+    bottom: 66px;
+  }
+  .touch-controls > div {
+    gap: 5px;
+  }
+  .touch-controls > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 52px);
+  }
+  .touch-controls button,
+  .touch-controls > div > button:last-child {
+    width: 52px !important;
+    height: 42px !important;
+    font-size: 10px !important;
+  }
+  .touch-controls > div:first-child {
+    align-items: end;
+  }
+  .game-loading .control-guide {
+    font-size: 12px;
+    gap: 7px;
+  }
+  .game-loading {
+    overflow-y: auto;
+    gap: 10px;
+  }
+  .game-loading .partner-preview {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-height: 520px) {
+  .combat-hud {
+    bottom: 46px;
+    left: 155px;
+    right: 155px;
+  }
+  .combat-hud button {
+    min-width: 0;
+    font-size: 10px;
+    padding: 5px;
+  }
+  .combat-hud small {
+    display: none;
+  }
+  .touch-controls {
+    bottom: 45px;
+  }
+  .touch-controls > div:last-child {
+    grid-template-columns: repeat(4, 48px);
+  }
+  .touch-controls > div > button {
+    width: 48px !important;
+    height: 40px !important;
+  }
+  .boss-hud {
+    top: 55px;
+    left: auto;
+    right: 10px;
+    width: 240px;
+  }
+  .game-loading .partner-preview {
+    display: none;
+  }
+  .game-loading h2 {
+    font-size: 18px;
+  }
+  .game-loading {
+    padding: 10px;
+  }
+  .game-loading .control-guide {
+    margin: 0;
+    font-size: 11px;
+    gap: 3px;
+  }
+  .game-loading p {
+    font-size: 12px;
+  }
+  .game-loading .primary {
+    padding: 8px 20px;
+  }
+}

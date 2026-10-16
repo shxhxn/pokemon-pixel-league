@@ -1,0 +1,32 @@
+{
+  "generation": "built-in image_gen",
+  "reference": "User-supplied Moonlit Lakeside Pixel City.png; style reference only",
+  "date": "2026-10-14",
+  "prompts": "PROMPTS.md",
+  "assets": [
+    {
+      "file": "parallax-atlas.png",
+      "bytes": 1422184,
+      "sha256": "54495b46c18def1f58a50c69962609c2b84722d9ff0998350133649fab2d2c17",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true
+    },
+    {
+      "file": "terrain-atlas.png",
+      "bytes": 1805168,
+      "sha256": "8b805ba83d94df338b7b5d61a332eca830403cf2c3d461dad1530732ee8e405d",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true
+    },
+    {
+      "file": "village-atlas.png",
+      "bytes": 1936330,
+      "sha256": "85845654f54ce9830ecebd84fc58faba8628af198adc35b7d94f84e2636468a7",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true
+    }
+  ]
+}

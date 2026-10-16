@@ -1,0 +1,53 @@
+Enemy motion: https://github.com/PMDCollab/SpriteCollab
+Contributed artwork: CC BY-NC 4.0; official Chunsoft/Pokemon rights retained.
+Static portraits: https://github.com/PokeAPI/sprites
+
+rattata
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0019/
+2020-10-07 17:58:43.392257	CHUNSOFT	CUR	Unspecified	Walk,Attack,Strike,Shoot,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+
+pidgey
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0016/
+2020-10-07 17:58:43.381290	CHUNSOFT	CUR	Unspecified	Walk,Attack,Strike,Shoot,FlapAround,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+2024-12-04 23:02:08.634038	<@!702275233125630042>	CUR	CC_BY-NC_4	EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint
+2024-12-24 02:58:20.250215	<@!702275233125630042>	CUR	CC_BY-NC_4	EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,LostBalance,TumbleBack,HitGround,Faint
+
+zubat
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0041/
+2022-12-16 19:41:09.853923	CHUNSOFT	CUR	Unspecified	Idle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Swing,Double,Rotate,Hop,Hover
+
+geodude
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/
+2020-10-07 17:58:43.548838	CHUNSOFT	CUR	Unspecified	Walk,Attack,Punch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+
+gastly
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/
+2020-10-07 17:58:43.596710	CHUNSOFT	CUR	Unspecified	Walk,Attack,Strike,Shoot,Lick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+
+voltorb
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0100/
+2020-10-07 17:58:43.618650	CHUNSOFT	CUR	Unspecified	Attack,Charge,Double,Hop,Hurt,Idle,Rotate,Sleep,Swing,Twirl,Walk
+2022-06-05 04:07:40.969287	<@!237286997645983744>	CUR	PMDCollab_1	EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint
+2023-03-13 02:49:36.058081	<@!237286997645983744>	CUR	PMDCollab_1	EventSleep,Wake,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint
+
+ekans
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0023/
+2020-10-07 17:58:43.411209	CHUNSOFT	CUR	Unspecified	Walk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+2026-05-10 01:47:17.896026	<@!356635814668664832>	CUR	CC_BY-NC_4	EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint
+
+haunter
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0093/
+2022-12-16 20:06:58.019393	CHUNSOFT	CUR	Unspecified	Idle,Walk,Sleep,Hurt,Attack,Charge,Shoot,MultiStrike,Lick,Swing,Double,Rotate,Hop
+
+gengar
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/
+2022-12-17 00:13:11.432426	CHUNSOFT	CUR	Unspecified	Idle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Lick,Twirl,Swing,Double,Rotate,Hop
+2023-04-22 22:29:17.717502	<@!237286997645983744>	CUR	PMDCollab_1	EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint
+
+onix
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0095/
+2020-10-07 17:58:43.602694	CHUNSOFT	CUR	Unspecified	Walk,Attack,Slam,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate
+
+electabuzz
+https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0125/
+2020-10-07 17:58:43.687465	CHUNSOFT	CUR	Unspecified	Walk,Attack,Punch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate

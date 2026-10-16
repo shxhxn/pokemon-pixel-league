@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+data/
+*.log
+artifacts/
+.npm-cache/
+
+.playwright-mcp/
+test-data-*/

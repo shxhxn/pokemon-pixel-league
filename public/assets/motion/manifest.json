@@ -1,0 +1,4388 @@
+{
+  "source": "https://github.com/PMDCollab/SpriteCollab",
+  "license": "Upstream CC BY-NC 4.0 for contributed work; official Chunsoft artwork and Pokemon underlying rights remain relevant. See included upstream license and character credits.",
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "sheet": "/assets/motion/1.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 26,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            16,
+            17,
+            18
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Idle-Anim.png",
+          "sha256": "bae238b6ae50dc97781a03b2210dc3ee1954c9f6207826e49091227bb9c783d1"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Walk-Anim.png",
+          "sha256": "84e8e7a58f68204a47f990becc7e8c324e486e5127557261e8ccbe55e9e979b2"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Hop-Anim.png",
+          "sha256": "2ec065c3af13d095c4d9599ab475ad7aee68ed0fbe0cbaf52c92145cd28f6e5d"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Hurt-Anim.png",
+          "sha256": "cbafac2615cfa0023288e2b2d01ba8c180a54164aa49430a06acd83756880976"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/Pose-Anim.png",
+          "sha256": "9f0712690a113d7af246c00de5681e8935589479b9176087d5c1eaba7af600a7"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.323442\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Dance,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0001/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 4,
+      "name": "Charmander",
+      "sheet": "/assets/motion/4.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 23,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/Idle-Anim.png",
+          "sha256": "304a2a2d7f07e6a81bec42270b585b57d4ce0af78b20a6905a1bc704e2415350"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/Walk-Anim.png",
+          "sha256": "3e120c93b743fe30d10766114d54e230e851a43e4ffc174bcb7eb424a452a05a"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/Hop-Anim.png",
+          "sha256": "8d3ee5f46c7aee5091a7ad6ff482f6ca74be3799bf017d1e31d4a2b1b0bb17fb"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/Hurt-Anim.png",
+          "sha256": "86e742d76d27fede779bde33ab956799de900361cf842946086c25eac2042ad1"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/Pose-Anim.png",
+          "sha256": "e489f1bc49518f59e636074a079761c6e945d37bbfd807a407f985b40af4589a"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.337405\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Kick,Shoot,Strike,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0004/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 7,
+      "name": "Squirtle",
+      "sheet": "/assets/motion/7.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 27,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            22,
+            23
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            24,
+            25,
+            26
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            19,
+            20,
+            21
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Idle-Anim.png",
+          "sha256": "d796b3b94475e4e2a5089bf10f392559989d4104d29c2fe387cfe003bcba5447"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Walk-Anim.png",
+          "sha256": "0e71a8bf34299cf73e59eccebc0b9fc16dfb9bd9554d8009b2323c8e3c00504f"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Hop-Anim.png",
+          "sha256": "fa00cb92c520cde4be1356b15ff91381b35f1120278b4e02bd75816ca8f540e1"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Hurt-Anim.png",
+          "sha256": "b08cd8679617df5ca9d1e87ed773a8b3265eae46ef945f4bec2c9153b645eceb"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/Pose-Anim.png",
+          "sha256": "20b929bc921677c8dc76109ce162bf609a84f08a9c44b4e880769e1500dfe5f1"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.349371\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0007/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 25,
+      "name": "Pikachu",
+      "sheet": "/assets/motion/25.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/Idle-Anim.png",
+          "sha256": "f1021ac60879698076fdb80705f893d0646d2b9ddf2bdb8c81803fbb7e87ad86"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/Walk-Anim.png",
+          "sha256": "5cfc2c775708c28c11f98e027e883261ab3ae4276e51621eec11c979598651f9"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/Hop-Anim.png",
+          "sha256": "351bfe5341b9251731b886016f39f338a113e485388f0e1058e6958da36a727c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/Hurt-Anim.png",
+          "sha256": "4f096cee94aab6e2c444e6e5a9e77680858d81ad90ddaded05f7e2fea69e3776"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/Pose-Anim.png",
+          "sha256": "efe90889a2c41b01acd4e3e302fd1d3e2ca4f244bf880accba116b65f25399d1"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.416193\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Shoot,Shock,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0025/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 26,
+      "name": "Raichu",
+      "sheet": "/assets/motion/26.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/Idle-Anim.png",
+          "sha256": "1277a3583989551b251b87fbe60ad04bd01ea19b23f2ba43e7aef5b3fecdd366"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/Walk-Anim.png",
+          "sha256": "6526184cf16f5b97a1fc2d051e423f96b83843e2bf052ac9b1f1b12f90c90a70"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/Hop-Anim.png",
+          "sha256": "8570ec85f49c239f81c240ae06c62fab95850b3935868b7c5df1f4b6d2a5d47e"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/Hurt-Anim.png",
+          "sha256": "c570c1415cb09c914076086e4c1623d2c6d131fe5693aa2b89b8a415eae21664"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/Pose-Anim.png",
+          "sha256": "0b380a29b25c408e424d5167c1a89a55a76e0d8caf30c254015732311cb1dec4"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.421179\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Shoot,Shock,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-12-23 02:47:04.237398\t<@!217653022094786560>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-12-23 02:50:14.012801\t<@!276369635304275968>\tCUR\tCC_BY-NC_4\tTrip,HitGround,Faint\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0026/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 39,
+      "name": "Jigglypuff",
+      "sheet": "/assets/motion/39.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/Idle-Anim.png",
+          "sha256": "c3d863ca58d1a2bb37b5b6413809f5760b98b8879abc9fa4b56e860d62fe90a9"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/Walk-Anim.png",
+          "sha256": "ac5b6bcd172e6dbf6c6dd9978d4b69c093f6d540f9fa41050212c6aa3946f21c"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/Hop-Anim.png",
+          "sha256": "34a6df13b43b7407461c6df1612203b365e3cc441276632ef2b9821eec1992b3"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/Hurt-Anim.png",
+          "sha256": "aff49b2ffab49c9d83db38da026a8d4ee9ea766ee3144c2c3574617b22c9f2b7"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/Pose-Anim.png",
+          "sha256": "b0e6d2a122fbb6f3bee2fde3eafeec50bd75e87569fadcde7180e0a2a3059028"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.456087\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slam,Shoot,Withdraw,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-03-11 02:56:35.847602\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-03-16 10:21:23.990862\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tNod\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0039/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 52,
+      "name": "Meowth",
+      "sheet": "/assets/motion/52.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 23,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/Idle-Anim.png",
+          "sha256": "df1b0115a3fbf15518f3a95eb8f0f48071da8d0715646e1f3f2d26f17d74a8e7"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/Walk-Anim.png",
+          "sha256": "c58d87c7bc111288963f7df341e7c38f444908104859810bc505107212cc6eb9"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/Hop-Anim.png",
+          "sha256": "1c5b5959d740bddf0d86541a80579bd61fda98d0b238c913524911ad219d61a9"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/Hurt-Anim.png",
+          "sha256": "0867146aa69147f50c872102f1429f17f29af6cc3cbb55f7055c66ddf1837850"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/Pose-Anim.png",
+          "sha256": "34d43463ded721ba5f4fb53e0745b73102ccac5d8292a0970793c3f72c075159"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.491989\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,MultiStrike,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0052/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 54,
+      "name": "Psyduck",
+      "sheet": "/assets/motion/54.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 23,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Idle-Anim.png",
+          "sha256": "890be68026823e8c9807c5978d7420665bac67db0f7f5126a30bbf4c1ce9611e"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Walk-Anim.png",
+          "sha256": "890be68026823e8c9807c5978d7420665bac67db0f7f5126a30bbf4c1ce9611e"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Hop-Anim.png",
+          "sha256": "628cf82fdda44828bab1d41dce06f82620929039bfb98ab6a7be23339c435b1d"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Hurt-Anim.png",
+          "sha256": "e57d8d6453a2f55fbddb47560d5169172cb45903f1edfd7bba4061cc36dd3004"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/Pose-Anim.png",
+          "sha256": "e8abad87b0da93c02c0cd1470cb9900e24140c482c83702449be0dbd3a7fb5d7"
+        }
+      },
+      "credits": "2022-12-16 20:06:38.135514\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,MultiScratch,Twirl,Swing,Double,Rotate,Hop,Pose\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0054/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 58,
+      "name": "Growlithe",
+      "sheet": "/assets/motion/58.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 22,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            17,
+            18
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            19,
+            20,
+            21
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            14,
+            15,
+            16
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0058/Idle-Anim.png",
+          "sha256": "0cc65232a808eb456e95c02287a095e3df3ef26046e282d16f787eb8389cb187"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0058/Walk-Anim.png",
+          "sha256": "eefaea9bf9241ced7639e6adb976e8ccbc5b2ecac2fa3e1e37708e290302f529"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0058/Hop-Anim.png",
+          "sha256": "0fccd46986b922010431b3219d4055f06df6bcc450e7f4db9bbba7a67bf5691d"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0058/Hurt-Anim.png",
+          "sha256": "e2c6e1b9705eeef1a0cd8a3509e283bddbae0384e06495db455b7bc0b6f6b0f2"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.507947\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Rumble,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-04-24 10:39:15.896788\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEat,Cringe\n2026-07-28 00:43:16.483827\t<@!1377429093997477928>\tCUR\tCC_BY-NC_4\tEventSleep\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0058/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 63,
+      "name": "Abra",
+      "sheet": "/assets/motion/63.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 29,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            24,
+            25
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            26,
+            27,
+            28
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            21,
+            22,
+            23
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/Idle-Anim.png",
+          "sha256": "4827bda3acc137dc76f778d95e64222915ed72747bc7bc6f32f2c308d6fda18d"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/Walk-Anim.png",
+          "sha256": "53dc06585a45660cda943823aa481d5bff82543128b3577b057bebb01cf3b83d"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/Hop-Anim.png",
+          "sha256": "7440f70a14a29a8628109b7d75885ba3be35ca1a48ce6a5b94e1d8ea3000e7cf"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/Hurt-Anim.png",
+          "sha256": "56436baf476cec9d0e913fd3b5495f3e1d8819adc6f1ea163473da23229a06fc"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/Pose-Anim.png",
+          "sha256": "ff5a51526849a7695ea3e43f40287d4b8d503d1c23119ae4b54903e6fae6b4d7"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.520911\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Jab,Strike,SpAttack,Shoot,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-04-20 08:37:17.096204\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-04-24 10:38:58.753469\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Float,Laying\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0063/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 66,
+      "name": "Machop",
+      "sheet": "/assets/motion/66.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 23,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/Idle-Anim.png",
+          "sha256": "cffd63aa51fe47ed1761b38d4135100ecd7109f074d926001c42be619c072835"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/Walk-Anim.png",
+          "sha256": "59f4ecd71b27453edeaa570032b13785d4a4c56108b947ccdcf19ea77331bf83"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/Hop-Anim.png",
+          "sha256": "a24a85ce2147b1166317f6a5a81dbce04be56ced331b74c5dd7a21be4f0b9541"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/Hurt-Anim.png",
+          "sha256": "6c95f3174f4a65052670fba8e2c6e2d1b77eb62bb13e0235c7210a5eb58a5d8c"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/Pose-Anim.png",
+          "sha256": "b0209b0199fe88d22dc3990f10abefd3cabf28e2ad8ebab234915de0f1797e20"
+        }
+      },
+      "credits": "2022-12-17 00:12:51.188119\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Kick,Swing,Double,Rotate,Hop,Pose\n2022-12-20 11:53:56.258311\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pull,Pain,Float,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0066/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 74,
+      "name": "Geodude",
+      "sheet": "/assets/motion/74.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Idle-Anim.png",
+          "sha256": "bbb71a05296140ae78b132f62a5408f5830a3c10e30127b23022bf9a9486d93f"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Walk-Anim.png",
+          "sha256": "a0d4753f962a93ee469bfb66e3a0acd8799f5d0a989f1527397689470384e0b2"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Hop-Anim.png",
+          "sha256": "9b32ba7186016325f2f4eef3a7e663db00fb89338108c5f1b9638c01a5997bf3"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/Hurt-Anim.png",
+          "sha256": "9597cfcc589886b381d56afd20bd59f9967394cc402be44ac6af98067b5cacc1"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.548838\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Punch,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0074/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 77,
+      "name": "Ponyta",
+      "sheet": "/assets/motion/77.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 33,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            28,
+            29
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            30,
+            31,
+            32
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            25,
+            26,
+            27
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/Idle-Anim.png",
+          "sha256": "02e42426647788b6b24fd07d03ba663ef8d39a542a0e7398d5923c2593ecb359"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/Walk-Anim.png",
+          "sha256": "1e6b41df7b572f46d4faaf7a361cb674d7d8f39f7e16632cbfd5d0b02f7cb247"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/Hop-Anim.png",
+          "sha256": "665e03153a767257b6a68ac4d078243a0f98a0eda84e129baca8d81df4907928"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/Hurt-Anim.png",
+          "sha256": "a4618123107a3a70083b998e8ed58d8ce8445eb66e501577efbf3b38368544f6"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/Pose-Anim.png",
+          "sha256": "48b25d75e170f8364f0f1cf91db34fc2e7c0d5b81d491546ab9505f667b9e7da"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.554821\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-03-11 05:13:10.454377\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2025-03-18 05:33:22.818298\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tWake,Nod,HitGround,Faint\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0077/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 79,
+      "name": "Slowpoke",
+      "sheet": "/assets/motion/79.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0079/Idle-Anim.png",
+          "sha256": "25f450104f22b787d189638f58f1f03a34758970454514bafb8e528cf147f706"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0079/Walk-Anim.png",
+          "sha256": "8f9c17c5b5d04759e782036ccbec76eeafed3effd0f46d88565f1ab2460fa684"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0079/Hop-Anim.png",
+          "sha256": "550d494a53736e49fe79569f1fe5d68a1a27c37942b66dac2dd55d52a4af730f"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0079/Hurt-Anim.png",
+          "sha256": "1d5da84f581306bf6cef9adb8c826485f78b5f07b9a53d0308f41eedd87743bc"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.559808\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0079/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 92,
+      "name": "Gastly",
+      "sheet": "/assets/motion/92.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 36,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            28,
+            29
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            25,
+            26,
+            27
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/Idle-Anim.png",
+          "sha256": "fab0e9c1c3c5444b03bdbd570c7a24d73f2e25fb35f27b407a6c9f53dc63cd11"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/Walk-Anim.png",
+          "sha256": "d60535fae6d2d131c6ba5d75a776446753eef826d956a3827172631d4ed5878f"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/Hop-Anim.png",
+          "sha256": "609dc4e4169d60fc9247798ac86ebc0681d9441e809f0db84cf5305dcb59c549"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/Hurt-Anim.png",
+          "sha256": "08dd2d4e2e288beaaab5330d912a0d78759ed8c2cf217125b9d47317e17f5f8f"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.596710\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Lick,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0092/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 94,
+      "name": "Gengar",
+      "sheet": "/assets/motion/94.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 28,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            22,
+            23
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            17,
+            18,
+            19,
+            20,
+            21
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            19,
+            20,
+            21
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/Idle-Anim.png",
+          "sha256": "b361da86327436f28508f8b0bb1c5cc59807cc75d1e586ab19f218f7db175169"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/Walk-Anim.png",
+          "sha256": "be39dae12dae3715a3328628c4c6bc542fc9805d483e877d420d8dac31279a0d"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/Hop-Anim.png",
+          "sha256": "daffa2fb584dda45d6db7b399bb187f56371404792994a4ce30b46f2e54be594"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/Hurt-Anim.png",
+          "sha256": "74e2457a2e7429a8417fc46ff39c48fae7fa04f2a19d01533cf4f5db8969e49a"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/Pose-Anim.png",
+          "sha256": "f1bc1618e008f499765cf039bd75e0fbc45b4f1c1958cbbd57688ce039cfa5f1"
+        }
+      },
+      "credits": "2022-12-17 00:13:11.432426\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Lick,Twirl,Swing,Double,Rotate,Hop\n2023-04-22 22:29:17.717502\t<@!237286997645983744>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0094/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 104,
+      "name": "Cubone",
+      "sheet": "/assets/motion/104.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/Idle-Anim.png",
+          "sha256": "1769019adbc20efd8eb0bbf52a9ca603a1c1c4d5c60d11022b05b842995f1241"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/Walk-Anim.png",
+          "sha256": "839c41d482239230c15e8ce71ed435f219ee7d511663bdd5ad539dc5d540b44b"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/Hop-Anim.png",
+          "sha256": "b9dedb8dc92cf21240944f11fe3fc23c7f5d07faf3863cb3f27ba2fde3c1d1a3"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/Hurt-Anim.png",
+          "sha256": "ce9fb9cc53f4b539071e4cdd973482fd55c07191598cecfbaac49ed3cb2b66e1"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/Pose-Anim.png",
+          "sha256": "c20c4c2864e666ad6e8a1420a075bb34bcd1ccb47b1488dbecbefffd75506d93"
+        }
+      },
+      "credits": "2022-12-17 00:12:56.028560\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,SpAttack,Swing,Double,Rotate,Hop,Pose\n2023-01-02 22:54:59.449267\t<@!356635814668664832>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Float,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2023-03-18 06:05:50.508814\t<@!965734014604410990>\tCUR\tPMDCollab_1\tDeepBreath\n2026-10-11 21:52:15.062676\t<@!965734014604410990>\tCUR\tCC_BY-NC_4\tDeepBreath\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0104/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 113,
+      "name": "Chansey",
+      "sheet": "/assets/motion/113.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 28,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0113/Idle-Anim.png",
+          "sha256": "3fcf061e0997ba65e6d8f661d67a9a412b7252599537faa3cc19663d9302ce1c"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0113/Walk-Anim.png",
+          "sha256": "a8f9da37b1eb801649429a5748e1f84a0b635bc426f74fa7d0c5e10e53561302"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0113/Hop-Anim.png",
+          "sha256": "78c0652201ce1d9f949432ed7002969c68f75073da248fa07106a33cd8ea50e4"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0113/Hurt-Anim.png",
+          "sha256": "41de45bc04692932c0e12cd85970b5fc7170bba3bbfad9c6042780bd9b9ce68f"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.655551\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0113/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 123,
+      "name": "Scyther",
+      "sheet": "/assets/motion/123.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0123/Idle-Anim.png",
+          "sha256": "19c9a0e548f5f137ec1021d9ab7b94526d2db082d06ed3f307e13acd67cbb365"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0123/Walk-Anim.png",
+          "sha256": "beca8bf4fbe76c844a2120fb97da09948d06295b6196f4179e774c06b5d2cf84"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0123/Hop-Anim.png",
+          "sha256": "ff33fb05308b553fa45a07c46474e1e2e6773317e66193512753764ce579425c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0123/Hurt-Anim.png",
+          "sha256": "5da4aa285b56da702faa84648ce683b74a6b28ff5c6c7cf11aaaec61a51a513d"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.683476\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Slice,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0123/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 129,
+      "name": "Magikarp",
+      "sheet": "/assets/motion/129.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 27,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            21,
+            22
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            23,
+            24,
+            25,
+            26
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            18,
+            19,
+            20
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0129/Idle-Anim.png",
+          "sha256": "5575fb5e43f2ad7b061fa3b821871e3ac15ec3c1f3ef491a2826de6f41fba4da"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0129/Walk-Anim.png",
+          "sha256": "a1d26b4fbee1da62d6616dc1cbd3dc30330c21017cbb25108864e9a597129ab4"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0129/Hop-Anim.png",
+          "sha256": "cfa240dbae7f8df366d046e4a3c6a7e46c1b2b6b7ca6d49ec33f6e4bd2999465"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0129/Hurt-Anim.png",
+          "sha256": "731ef22e8c30f7f8e8489f3049544b469f62ec61626125f038c74d9c149f35a6"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.697441\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0129/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 131,
+      "name": "Lapras",
+      "sheet": "/assets/motion/131.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Idle-Anim.png",
+          "sha256": "ee0f45de0b35013b8e4584107fc2e83606bca65eaed067abafb10771f3f4ec48"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Walk-Anim.png",
+          "sha256": "7f2fac19960cf6ca7683329caff196e8d71e3e41f9ac027b57f38f088c8db9ca"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Hop-Anim.png",
+          "sha256": "1cb6e7bb29cf6770722cdc3eb6198da32470a4d9ae36cc3d39fc28b920726693"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/Hurt-Anim.png",
+          "sha256": "26deafaf3bf4e451bd3ed1b8d8c5ab565a1b601e44a63cbdf89248c052bdb5a1"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.706416\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Sound,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0131/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 133,
+      "name": "Eevee",
+      "sheet": "/assets/motion/133.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 26,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            16,
+            17,
+            18
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/Idle-Anim.png",
+          "sha256": "1dec7d7524844f35a8f7c8c0574d9741edad6cb319a980a5097a825a58bbe4de"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/Walk-Anim.png",
+          "sha256": "037329dca93572a20115e679f10a85d4981b7cb961b6c8f0fd9c78745ba98cc0"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/Hop-Anim.png",
+          "sha256": "08bdb1e04a91dbc052b0274eb75873cafef125c625c07d63b90e3c5fbf1eb00c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/Hurt-Anim.png",
+          "sha256": "88acd2fcdb83a00dd529c10b350e29eecc24af9c79ae96ba2e8d5430b720ca48"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/Pose-Anim.png",
+          "sha256": "278919effefac3898dcff93e3cc55f8df4a650a65c69c7b32d64b178b572747a"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.712400\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0133/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 134,
+      "name": "Vaporeon",
+      "sheet": "/assets/motion/134.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 20,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            13,
+            14,
+            15
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0134/Idle-Anim.png",
+          "sha256": "c4479a9ebeafce94a8741b94d68847d5232e41d025881704b4d8f4a8a396276f"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0134/Walk-Anim.png",
+          "sha256": "7664f55b8d717981f49c88e96999686f236ad2a2f2dc9ef496d468737eced3ac"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0134/Hop-Anim.png",
+          "sha256": "984e77a36a140c93eeb8b073a1d6116434f4fc47bc9188074c31feda0abb6985"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0134/Hurt-Anim.png",
+          "sha256": "72dcffa21f2fdf944f0f6d9b6db1950add2c9584f00837e2e3c9db2aa09dd1f7"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.716391\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0134/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 135,
+      "name": "Jolteon",
+      "sheet": "/assets/motion/135.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 23,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            13,
+            14,
+            15
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/Idle-Anim.png",
+          "sha256": "e03e8fd92eeb370c46d468b4cd20ea732b5dd4f6dc6e67df007f8279dfd513d4"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/Walk-Anim.png",
+          "sha256": "f8e5a80569dd52725510cd01c367fe994736b6445726bee46598039abb9a0fda"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/Hop-Anim.png",
+          "sha256": "1b017bb67542f19c2b4e074286c36a5ec5b370567cca26297bd59759ff3cdb7b"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/Hurt-Anim.png",
+          "sha256": "c5084b501c5ae2ca602d326313650062d5121526b6d177397f3b73902a69e1b0"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/Pose-Anim.png",
+          "sha256": "9a551270738136e93b3f0c54e1f860b71a73a7fd13eaaacc656ccd424bff2e28"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.719381\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Shock,Shoot,Sleep,Swing,Walk\n2021-05-09 08:03:16.469247\t<@!474262233442942995>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Rotate,Shock,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0135/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 136,
+      "name": "Flareon",
+      "sheet": "/assets/motion/136.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/Idle-Anim.png",
+          "sha256": "7887bd324a5df3e5e92964b6523f2fa3784ae871382ca5d2f790cac7513e03ac"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/Walk-Anim.png",
+          "sha256": "58b7008226aa2532baad0b463c1c8feee227ba773247b5ab9c3a63e5b0031912"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/Hop-Anim.png",
+          "sha256": "025b4c46ff0c9655da9193ea86af47fecb7b1707dd3139b1b56e6bf7d0731e96"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/Hurt-Anim.png",
+          "sha256": "56b5034513e1739d2d49c086c60d3229b7fbcebd3572f51802b29874e22eda5f"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/Pose-Anim.png",
+          "sha256": "2223d6d28c7de76b7bd6986a463b17565cfea1f7713e8e985364467af5835b4b"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.722373\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Appeal,TailWhip,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-06-13 09:55:30.372631\t<@!722542425196724289>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Pose,Pull,Pain,Float,DeepBreath,Nod,Sink,Laying,Head,Cringe,LostBalance\n2024-07-06 07:30:13.316346\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-07-15 15:25:49.675866\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tTumble,Sink,LostBalance,TumbleBack\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0136/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 143,
+      "name": "Snorlax",
+      "sheet": "/assets/motion/143.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 28,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Idle-Anim.png",
+          "sha256": "b692c89bc7c10a648fb6f72b0cf0ce9e0f84fec54dfa389709893323314e1b39"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Walk-Anim.png",
+          "sha256": "304247a70ae32ee08cf1927caf71926903d7b67a3e480f15dcd76feb4be801b6"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Hop-Anim.png",
+          "sha256": "3627ce2f2f9470b24d615c885aae1565dae6b0e7795a8716252cba4323e42368"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/Hurt-Anim.png",
+          "sha256": "6a50b495198219fcf599a864527a6a8f56bc7fdaece0891632f406d3de70fb29"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.739327\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Stomp,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0143/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 147,
+      "name": "Dratini",
+      "sheet": "/assets/motion/147.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            16,
+            17,
+            18
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0147/Idle-Anim.png",
+          "sha256": "921ea20d272b802c577d89f395b49d18b0d6edbc8ae141d7a3eec7738fa33b19"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0147/Walk-Anim.png",
+          "sha256": "5bb7a6f744a19ea2ef1f2bf4200d6d8ec3d6f0eade4932959632c256a1ae88df"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0147/Hop-Anim.png",
+          "sha256": "239024a89451f6e53f15ae57b21a659c5d7053e42b74befb26e71c698b500eeb"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0147/Hurt-Anim.png",
+          "sha256": "a9b9f42ce9266e772544e3cd001e6fa911464085b68870581d60a8878e7d472e"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.748303\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-07-18 23:05:22.804957\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Tumble,Pain,Float,Laying,TumbleBack\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0147/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 149,
+      "name": "Dragonite",
+      "sheet": "/assets/motion/149.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 30,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            21,
+            22
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            18,
+            19,
+            20
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0149/Idle-Anim.png",
+          "sha256": "83b0d9d108d844c8cc2db0190ca4e36e0fdd491b5014c3bf31bc36b0424ba0c2"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0149/Walk-Anim.png",
+          "sha256": "04ae6ed9a69da739e09b2d8fca24905cb81c6f963865ee4e343dd82f25d06637"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0149/Hop-Anim.png",
+          "sha256": "871d645a165ce5642014755f3259bfe7d45c5d63f210e29dced5da542203e776"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0149/Hurt-Anim.png",
+          "sha256": "ee8e8a9a4a737d4e33347486d4677a0e23880fde92c043480dcbf734f1dd6054"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.752293\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Withdraw,Emit,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2025-11-09 03:55:24.114365\t<@!268261643178344448>\tCUR\tCC_BY-NC_4\tSpecial0\n2025-11-09 03:58:59.331082\t<@!157796074457661440>\tCUR\tCC_BY-NC_4\tSpecial0\n2025-11-09 03:59:05.496762\t<@!157796074457661440>\tCUR\tCC_BY-NC_4\tSpecial0\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0149/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 150,
+      "name": "Mewtwo",
+      "sheet": "/assets/motion/150.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 29,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            24,
+            25
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            26,
+            27,
+            28
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            21,
+            22,
+            23
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/Idle-Anim.png",
+          "sha256": "b6c1a0062cf569db60ddd40066a061cb29d3e80e19619f66a2a1d36a5e8c6dfb"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/Walk-Anim.png",
+          "sha256": "80fe3d8d560ac468a16e6dbdcf259681ccb2a3bd78af7b3355da8646ec36108f"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/Hop-Anim.png",
+          "sha256": "87f7969f52760d3e79657fb57e4142867cb660c3903de58a0788dfa26282c928"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/Hurt-Anim.png",
+          "sha256": "0b5e5705b1d8db9752727e6094418096e793c7f5a57dc92018f0cb91cf5a6d97"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/Pose-Anim.png",
+          "sha256": "a26551f17fae026b9d28a53ea51058ef06a0912bd0fee85795aa9ab144c6dd5f"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.755287\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hover,Hurt,Idle,Punch,Rotate,Shoot,Sleep,Swing,Walk\n2022-04-14 00:56:01.712419\t<@!702275233125630042>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hover,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Punch,Rotate,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0150/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 151,
+      "name": "Mew",
+      "sheet": "/assets/motion/151.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/Idle-Anim.png",
+          "sha256": "ab407cf217daf4a830e2812722faa15edd6a34de84e3908a30750ffc45118f33"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/Walk-Anim.png",
+          "sha256": "aea7850de7a572739716f69da45c439f37a32409151ef977bff23ae9bf7fd032"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/Hop-Anim.png",
+          "sha256": "b332ff5c0a7b2144b4311c7d379501e93230f8ed678aa5425a3cace912bd1de9"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/Hurt-Anim.png",
+          "sha256": "bdd7789bbe537607b5440e7451c9ab4b5c3185daae8c207ede91835751de94e0"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/Pose-Anim.png",
+          "sha256": "911f8d005b8f60f0eed974591e162559187057ba67db3fe9fa04c8aab06bc1a3"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.757279\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2024-07-02 16:38:18.898184\t<@!702275233125630042>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0151/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 152,
+      "name": "Chikorita",
+      "sheet": "/assets/motion/152.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/Idle-Anim.png",
+          "sha256": "3c635e816208e7191b555f0ffe46d4f978a75e2be9222fe14c1c8914be08cd26"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/Walk-Anim.png",
+          "sha256": "81c6f06ea031a2540398a84a782c1588103e34842189463622f62c933973c98a"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/Hop-Anim.png",
+          "sha256": "525af05a17c5a0d915cbe867320ad237c900849d4c164bd07c5ec90435d53673"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/Hurt-Anim.png",
+          "sha256": "2a27b184943ec9284a274acf176cb09e7d2b832af209bf97a95e2d8f3752b83e"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/Pose-Anim.png",
+          "sha256": "2a3063f76aa4dd25409e2810e4ebe0313bc5385e87de0279b5139dbd43664dd8"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.759274\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Slam,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0152/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 155,
+      "name": "Cyndaquil",
+      "sheet": "/assets/motion/155.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 21,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            18,
+            19,
+            20
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            13,
+            14,
+            15
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/Idle-Anim.png",
+          "sha256": "e2f0f2d2dab0d9d415fa357ca89f0f2fefb18c39ef75355c3a593692d078335f"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/Walk-Anim.png",
+          "sha256": "a32aac18192b2133851016c6aab45b898e9f8c4b6ce9c6f4c1299eb88577cd1d"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/Hop-Anim.png",
+          "sha256": "dbd5c725386ae3eb18f3753e0d5754e1a76923be94badb6a7217f5a6824d305a"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/Hurt-Anim.png",
+          "sha256": "534cfe4a5316c2c11b2d27e844ae69ca8227a8c14d83c0b77af887be87dd2bc7"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/Pose-Anim.png",
+          "sha256": "b4ef38484cf4d80a220fc4b77dcf05708c48773a71030754d7001bee3ab3a634"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.770244\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0155/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 158,
+      "name": "Totodile",
+      "sheet": "/assets/motion/158.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 26,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            21,
+            22
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            23,
+            24,
+            25
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            18,
+            19,
+            20
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Idle-Anim.png",
+          "sha256": "d8630f045d6f98c967c350b717de88380e0167832f69e810fb44a29f3c35e6b8"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Walk-Anim.png",
+          "sha256": "12205a823bdd91aad1c7db5e554f4ce2dfd3a9b190aa152874d632e9e8cc47a4"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Hop-Anim.png",
+          "sha256": "4c0ccbfae3bd9c94a548f74655c9127991a5cad650e500eb20e61d1cf1413b6c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Hurt-Anim.png",
+          "sha256": "690cdf2b79058149595315b01c048c31b12d4f8061e37ee5d97c2df6d35d08eb"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/Pose-Anim.png",
+          "sha256": "5ecfb50bb326b7d86cb8fb7d6d18e002990e959e61b3ae6aeafa7809e6ede68e"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.776231\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,SpAttack,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0158/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 196,
+      "name": "Espeon",
+      "sheet": "/assets/motion/196.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0196/Idle-Anim.png",
+          "sha256": "d0c2fb41f3c1b0906716d1416887256bb6f2a6612eb3f27e85a052e2ae5e63c1"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0196/Walk-Anim.png",
+          "sha256": "a092b26721bc59b495cc3f2c84cd7e7c36890644a2afd460c51706a53d9025ca"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0196/Hop-Anim.png",
+          "sha256": "503817bc7248a1f11876070ac83a33238baddc7b3e6dec2301bbb2a654d4000c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0196/Hurt-Anim.png",
+          "sha256": "9ab77941d25b47ccbb752f107326e673ba38a2c28033dc102e5793f309746d66"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.876961\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,Twirl,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0196/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 197,
+      "name": "Umbreon",
+      "sheet": "/assets/motion/197.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 35,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            28,
+            29
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            25,
+            26,
+            27
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/Idle-Anim.png",
+          "sha256": "89dfc5652ece0eddb053c937403d245c7162d6605858497389b247a2785d09fb"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/Walk-Anim.png",
+          "sha256": "1364ba14e7e943f5ff5c167c8a1b0bff54cab7f91352a0cc940d23f68d5b64b3"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/Hop-Anim.png",
+          "sha256": "bb04033229a947d22b872d689bc6bf01e1c26203842ce332e132ce965b1c4384"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/Hurt-Anim.png",
+          "sha256": "7af6b41c34c56f1e981277b8f2e03647481def3621871cbb2bcdeaabb1ec56ac"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/Pose-Anim.png",
+          "sha256": "edcb6e98ff768110c6bd0e3b89f94f7f912f82debb4bfc759817eb94cf4f5cca"
+        }
+      },
+      "credits": "2020-10-07 17:58:43.878955\tCHUNSOFT\tCUR\tUnspecified\tAttack,Charge,Double,Hop,Hurt,Idle,Rotate,Shoot,Sleep,Swing,Walk,Withdraw\n2021-02-07 01:19:42.640630\t<@!702275233125630042>\tOLD\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hurt,Idle,Laying,LeapForth,LookUp,LostBalance,Nod,Pain,Pose,Pull,Rotate,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk,Withdraw\n2021-09-22 19:54:46.968229\t<@!356635814668664832>\tCUR\tPMDCollab_1\tAttack,Charge,Cringe,DeepBreath,Double,Eat,EventSleep,Faint,Float,Head,HitGround,Hop,Hurt,Idle,Laying,LookUp,LostBalance,Nod,Pose,Pull,Rotate,Shoot,Sink,Sit,Sleep,Swing,Trip,Tumble,TumbleBack,Wake,Walk,Withdraw\n2024-05-24 04:18:55.879248\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tHead\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0197/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 282,
+      "name": "Gardevoir",
+      "sheet": "/assets/motion/282.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 24,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0282/Idle-Anim.png",
+          "sha256": "2fe861f10c7f0fa574e73891ee98753598755a958416c879f03e5d8b3a19f7c6"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0282/Walk-Anim.png",
+          "sha256": "c6b11a75ad15cfb7fb703dcbe30a2d5189d662eab46748ef0494bee04d8df93c"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0282/Hop-Anim.png",
+          "sha256": "0dc20321e8740035f227760646f4fd3faffde504512b4ebf1adbe3919c44f4e8"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0282/Hurt-Anim.png",
+          "sha256": "10272146972f9a456512dba68d3b04a1fc8a50ac9448fe18395cbbce7781adda"
+        }
+      },
+      "credits": "2022-07-09 22:37:29.896062\tCHUNSOFT\tCUR\tUnspecified\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Strike,Appeal,SpAttack,Swing,Double,Rotate,Hop\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0282/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 403,
+      "name": "Shinx",
+      "sheet": "/assets/motion/403.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 31,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            24,
+            25
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            21,
+            22,
+            23
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/Idle-Anim.png",
+          "sha256": "959d577963253d61006627a06df9ef494a1af2dd3316eb1557f855f9147864ee"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/Walk-Anim.png",
+          "sha256": "d3068f36c5b0b1746fd03414c7aee1d5c274dd92e9cf43871d7f29c14a0e5b21"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/Hop-Anim.png",
+          "sha256": "c979b557ae624e6e1a5df201989cb200955af271b54032045d20f7de91883d6c"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/Hurt-Anim.png",
+          "sha256": "8c9e3534058cd7879bce60f665f977d17a60472d806e3dbe126e558baf52cb37"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/Pose-Anim.png",
+          "sha256": "a942269ab569d28eae0c3d36e26002a9036f33272cd9be4532a8cc9dc28117b6"
+        }
+      },
+      "credits": "2020-10-07 17:58:44.585670\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,Strike,Shoot,TailWhip,Shake,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n2022-06-14 08:31:17.797713\tCHUNSOFT\tCUR\tUnspecified\tWake\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0403/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 447,
+      "name": "Riolu",
+      "sheet": "/assets/motion/447.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            15,
+            16,
+            17
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/Idle-Anim.png",
+          "sha256": "34f45f1881d734d012c778c9ef689b591a9ef678646845e134908b7b5d8c8f98"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/Walk-Anim.png",
+          "sha256": "6816ceb6127395063a69ad22a661a0374d72698edb26ce9ffee8b552211e64e0"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/Hop-Anim.png",
+          "sha256": "48b18986ee98f9da1900c906d398f393d95d123e5f7f0f13bf7bcfeb9d6ce623"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/Hurt-Anim.png",
+          "sha256": "b9c3065fd85bfbea2fdfcb653ad956cf72caa15493a305cdfe71002427756e99"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/Pose-Anim.png",
+          "sha256": "8504780070b3409bce5e8961265b2b88becb4ddc8132319e3199d352739c8961"
+        }
+      },
+      "credits": "2020-10-07 17:58:44.719312\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Strike,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate,EventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,Faint,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0447/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 448,
+      "name": "Lucario",
+      "sheet": "/assets/motion/448.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 25,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            20,
+            21
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            22,
+            23,
+            24
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Pose"
+        },
+        "fall": {
+          "frames": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            17,
+            18,
+            19
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/Idle-Anim.png",
+          "sha256": "f0690ed348514471d79ef01b65344ba25568f0d836bd08c7d7f8d37606d9fdc2"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/Walk-Anim.png",
+          "sha256": "62544fbc4a0d033a146413bd95f91b78d8c1b947559a4cebb9e8561810d8428a"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/Hop-Anim.png",
+          "sha256": "c03ae1ca58ac914cdbf556d162c199c46b9804a75a110ef1ae2e71f95118062b"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/Hurt-Anim.png",
+          "sha256": "d8ae76af2b5f3a18b4a4cb8dd17437c456e88d4806f814f79c6d0f7d4667e3da"
+        },
+        "Pose": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/Pose-Anim.png",
+          "sha256": "3af6eec8ff93a034f4dab2105a3ba56240765946c6753df10a8d73e90f9d9211"
+        }
+      },
+      "credits": "2020-10-07 17:58:44.723301\tCHUNSOFT\tCUR\tUnspecified\tWalk,Attack,QuickStrike,Strike,SpAttack,RearUp,Sleep,Hurt,Idle,Swing,Double,Hop,Charge,Rotate\n2023-03-19 21:50:39.908380\t<@!356635814668664832>\tCUR\tPMDCollab_1\tEventSleep,Wake,Eat,Tumble,Pose,Pull,Pain,Float,DeepBreath,Nod,Sit,LookUp,Sink,Trip,Laying,LeapForth,Head,Cringe,LostBalance,TumbleBack,HitGround,Faint\n2024-09-07 21:23:27.049432\t<@!356635814668664832>\tCUR\tCC_BY-NC_4\tEventSleep,Wake,Float,Trip,Laying,HitGround\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0448/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    },
+    {
+      "id": 658,
+      "name": "Greninja",
+      "sheet": "/assets/motion/658.png",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frameCount": 30,
+      "states": {
+        "idle": {
+          "frames": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "run": {
+          "frames": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "frameRate": 12,
+          "sourceAnimation": "Walk"
+        },
+        "jump": {
+          "frames": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hop"
+        },
+        "hurt": {
+          "frames": [
+            21,
+            22
+          ],
+          "frameRate": 10,
+          "sourceAnimation": "Hurt"
+        },
+        "celebrate": {
+          "frames": [
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "frameRate": 6,
+          "sourceAnimation": "Idle"
+        },
+        "fall": {
+          "frames": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "frameRate": 8,
+          "sourceAnimation": "Hop"
+        },
+        "land": {
+          "frames": [
+            18,
+            19,
+            20
+          ],
+          "frameRate": 14,
+          "sourceAnimation": "Hop"
+        }
+      },
+      "sources": {
+        "Idle": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0658/Idle-Anim.png",
+          "sha256": "25a290b836d35b58ff37453e192cd4a824d690ec9a1eed8dd276ab6596e1ea1f"
+        },
+        "Walk": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0658/Walk-Anim.png",
+          "sha256": "4254d5463756489eee2e51138a36df02907fc98669d127e570f61bf283c9ad14"
+        },
+        "Hop": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0658/Hop-Anim.png",
+          "sha256": "80b12382802210e934990ce0539c9ab64b7da768b5512be7207c05034540a380"
+        },
+        "Hurt": {
+          "url": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0658/Hurt-Anim.png",
+          "sha256": "0d7a968a4e61225c71beb2c8502c7299ee9af924a39864859ea492285a87b1bb"
+        }
+      },
+      "credits": "2022-07-07 22:33:51.270862\tJHONY_REX\tCUR\tPMDCollab_1\tIdle,Walk,Hurt,Attack,Charge,Swing,Double,QuickStrike\n2022-07-29 05:45:12.086421\t<@!215638650434617345>\tOLD\tPMDCollab_1\tIdle,Walk,Sleep,Hurt,Attack,Charge,Swing,Double,Rotate,Hop,QuickStrike\n2024-12-22 05:17:29.544141\tJHONY_REX\tCUR\tCC_BY-NC_4\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,Rumble,RearUp,Swing,Double,Rotate,Hop,QuickStrike\n2024-12-22 18:37:01.973197\t<@!229131140903075840>\tCUR\tCC_BY-NC_4\tIdle,Walk,Sleep,Hurt,Attack,Charge,Shoot,RearUp,Swing,Double,Rotate,Hop,QuickStrike\n",
+      "sourceDirectory": "https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/sprite/0658/",
+      "modifications": "Extracted east-facing frames; per-frame transparent trim with uniform per-character nearest-neighbor scale; feet aligned in 96x96 cells; split hop sequence into airborne and landing states."
+    }
+  ],
+  "errors": []
+}

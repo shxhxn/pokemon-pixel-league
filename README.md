@@ -2,6 +2,12 @@
 
 A playable, local-first campus arcade tournament: a React player portal, a real Phaser endless platformer, and an authenticated Express tournament server. The default run lasts two minutes, with three hearts and cosmetic character selection.
 
+## Screenshots
+
+[View the screenshot gallery](docs/screenshots/README.md) or [download all five full-HD screenshots](docs/screenshots/Pokemon-Pixel-League-Screenshots.zip).
+
+![Moonlit gameplay preview](docs/screenshots/03-moonlit-adventure.png)
+
 ## Run locally (Windows PowerShell)
 
 Requires **Node.js 24 or newer** and npm. On Windows use `npm.cmd` if PowerShell blocks `npm.ps1`.
